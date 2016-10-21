@@ -1,17 +1,12 @@
-# Airbnb JavaScript Style Guide() {
+# Atom JavaScript Style Guide
 
 *A mostly reasonable approach to JavaScript*
 
-[![Downloads](https://img.shields.io/npm/dm/eslint-config-airbnb.svg)](https://www.npmjs.com/package/eslint-config-airbnb)
-[![Downloads](https://img.shields.io/npm/dm/eslint-config-airbnb-base.svg)](https://www.npmjs.com/package/eslint-config-airbnb-base)
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 Other Style Guides
- - [ES5 (Deprecated)](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
- - [React](react/)
- - [CSS-in-JavaScript](css-in-javascript/)
- - [CSS & Sass](https://github.com/airbnb/css)
- - [Ruby](https://github.com/airbnb/ruby)
+
+ - [React](react/) 
+ - [CSS-in-JavaScript](css-in-javascript/) - Work in Progress
+ - [CSS & Sass](https://github.com/airbnb/css) Work in Progress
 
 ## Table of Contents
 
@@ -490,17 +485,16 @@ Other Style Guides
 ## Strings
 
   <a name="strings--quotes"></a><a name="6.1"></a>
-  - [6.1](#strings--quotes) Use single quotes `''` for strings. eslint: [`quotes`](http://eslint.org/docs/rules/quotes.html) jscs: [`validateQuoteMarks`](http://jscs.info/rule/validateQuoteMarks)
+  - [6.1](#strings--quotes) Use double quotes `''` for strings. eslint: [`quotes`](http://eslint.org/docs/rules/quotes.html) jscs: [`validateQuoteMarks`](http://jscs.info/rule/validateQuoteMarks)
 
     ```javascript
     // bad
-    const name = "Capt. Janeway";
-
+        const name = 'Capt. Janeway';
     // bad - template literals should contain interpolation or newlines
-    const name = `Capt. Janeway`;
-
+        const name = `Capt. Janeway`;
     // good
-    const name = 'Capt. Janeway';
+    const name = "Capt. Janeway";    
+    
     ```
 
   <a name="strings--line-length"></a><a name="6.2"></a>
