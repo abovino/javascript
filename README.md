@@ -4,7 +4,7 @@
 
 Other Style Guides
 
- - [React](react/) 
+ - [React](react/)
  - [CSS-in-JavaScript](css-in-javascript/) - Work in Progress
  - [CSS & Sass](https://github.com/airbnb/css) Work in Progress
 
@@ -493,8 +493,8 @@ Other Style Guides
     // bad - template literals should contain interpolation or newlines
         const name = `Capt. Janeway`;
     // good
-    const name = "Capt. Janeway";    
-    
+    const name = "Capt. Janeway";
+
     ```
 
   <a name="strings--line-length"></a><a name="6.2"></a>
@@ -1622,41 +1622,6 @@ Other Style Guides
     if ([0] && []) {
       // true
       // an array (even an empty one) is an object, objects will evaluate to true
-    }
-    ```
-
-  <a name="comparison--shortcuts"></a><a name="15.3"></a>
-  - [15.3](#comparison--shortcuts) Use shortcuts for booleans, but explicit comparisons for strings and numbers.
-
-    ```javascript
-    // bad
-    if (isValid === true) {
-      // ...stuff...
-    }
-
-    // good
-    if (isValid) {
-      // ...stuff...
-    }
-
-    // bad
-    if (name) {
-      // ...stuff...
-    }
-
-    // good
-    if (name !== '') {
-      // ...stuff...
-    }
-
-    // bad
-    if (collection.length) {
-      // ...stuff...
-    }
-
-    // good
-    if (collection.length > 0) {
-      // ...stuff...
     }
     ```
 
