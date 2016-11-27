@@ -559,7 +559,7 @@ Other Style Guides
 
     // good
     const foo = '\'this\' is "quoted"';
-    const foo = `'this' is "quoted"`;
+    const foo = `my name is '${name}'`;		
     ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -1194,7 +1194,7 @@ Other Style Guides
 
   <a name="modules--imports-first"></a>
   - [10.7](#modules--imports-first) Put all `import`s above non-import statements.
- eslint: [`import/imports-first`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/imports-first.md)
+ eslint: [`import/first`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md)
     > Why? Since `import`s are hoisted, keeping them all at the top prevents surprising behavior.
 
     ```javascript
@@ -2011,24 +2011,24 @@ Other Style Guides
 
     ```javascript
     // bad
-    (function (global) {
-      // ...stuff...
-    })(this);
+    import { es6 } from './AirbnbStyleGuide';
+      // ...
+    export default es6;
     ```
 
     ```javascript
     // bad
-    (function (global) {
-      // ...stuff...
-    })(this);↵
+    import { es6 } from './AirbnbStyleGuide';
+      // ...
+    export default es6;↵
     ↵
     ```
 
     ```javascript
     // good
-    (function (global) {
-      // ...stuff...
-    })(this);↵
+    import { es6 } from './AirbnbStyleGuide';
+      // ...
+    export default es6;↵
     ```
 
   <a name="whitespace--chains"></a><a name="18.6"></a>
